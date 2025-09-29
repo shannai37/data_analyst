@@ -1,4 +1,6 @@
-# 🤖 AstrBot 数据分析师插件
+**（学业繁忙，还未更新完成，先鸽一段时间，以后再补）**
+
+# 🤖 AstrBot 数据分析
 
 > **智能数据分析师 | 支持自然语言交互 | 用户画像分析 | 专业词云生成**
 
@@ -366,11 +368,6 @@ pip install -r requirements.txt
 ## 📄 **许可证**
 
 MIT License
-
-## 💬 **联系我们**
-
-- 提交 Issue: [GitHub Issues](https://github.com/your-repo/issues)
-- 功能建议: [Discussions](https://github.com/your-repo/discussions)
 
 ---
 
