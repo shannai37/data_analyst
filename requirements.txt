@@ -1,0 +1,25 @@
+# 数据处理核心
+aiosqlite>=0.19.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 可视化库
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scienceplots>=2.1.0
+
+# 机器学习和科学计算
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# 文件处理
+openpyxl>=3.1.0
+reportlab>=4.0.0
+Pillow>=10.0.0
+
+# 中文处理和词云
+jieba>=0.42.1
+wordcloud>=1.9.0
+
+# 网络请求 (AstrBot规范)
+aiohttp>=3.8.0

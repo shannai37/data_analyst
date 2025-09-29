@@ -1,0 +1,100 @@
+{
+  "data_retention_days": {
+    "description": "数据保留天数",
+    "type": "int",
+    "default": 90,
+    "hint": "超过此天数的数据将被自动清理，0表示永不清理"
+  },
+  "privacy_settings": {
+    "description": "隐私保护设置",
+    "type": "object",
+    "items": {
+      "enable_content_hash": {
+        "description": "启用内容哈希存储",
+        "type": "bool",
+        "default": true,
+        "hint": "启用后只保存消息内容的哈希值，保护用户隐私"
+      },
+      "sensitive_keywords": {
+        "description": "敏感关键词列表",
+        "type": "list",
+        "default": ["手机", "身份证", "密码", "银行卡", "地址"],
+        "hint": "包含这些关键词的消息将被特殊处理"
+      }
+    }
+  },
+  "analysis_settings": {
+    "description": "分析设置",
+    "type": "object",
+    "items": {
+      "cache_ttl": {
+        "description": "缓存有效期(秒)",
+        "type": "int",
+        "default": 1800,
+        "hint": "分析结果缓存时间，减少重复计算"
+      },
+      "min_data_threshold": {
+        "description": "最小数据量阈值",
+        "type": "int",
+        "default": 10,
+        "hint": "进行分析所需的最少消息数量"
+      },
+      "max_chart_items": {
+        "description": "图表最大项目数",
+        "type": "int",
+        "default": 20,
+        "hint": "图表中显示的最大数据项数量"
+      }
+    }
+  },
+  "permission_control": {
+    "description": "权限控制",
+    "type": "object",
+    "items": {
+      "admin_users": {
+        "description": "管理员用户ID列表",
+        "type": "list",
+        "default": [],
+        "hint": "只有管理员可以访问完整分析功能"
+      },
+      "allowed_groups": {
+        "description": "允许使用的群组ID列表",
+        "type": "list",
+        "default": [],
+        "hint": "空列表表示所有群组都可以使用"
+      },
+      "enable_auto_collect": {
+        "description": "启用自动数据收集",
+        "type": "bool",
+        "default": true,
+        "hint": "自动收集群聊消息进行分析"
+      }
+    }
+  },
+  "chart_settings": {
+    "description": "图表设置",
+    "type": "object",
+    "items": {
+      "dpi": {
+        "description": "图表分辨率",
+        "type": "int",
+        "default": 150,
+        "hint": "图表生成的DPI，影响清晰度"
+      },
+      "style": {
+        "description": "图表样式",
+        "type": "string",
+        "default": "seaborn-v0_8",
+        "options": ["seaborn-v0_8", "bmh", "fivethirtyeight", "ggplot"],
+        "hint": "选择图表的默认样式风格"
+      },
+      "color_palette": {
+        "description": "色彩方案",
+        "type": "string", 
+        "default": "husl",
+        "options": ["husl", "Set2", "viridis", "plasma", "tab10"],
+        "hint": "图表使用的色彩方案"
+      }
+    }
+  }
+}

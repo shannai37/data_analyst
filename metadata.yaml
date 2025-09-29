@@ -1,0 +1,11 @@
+name: "data_analyst"
+author: "DataAnalyst Team"
+description: "智能数据分析师插件 - 提供群聊数据分析、用户行为洞察、话题趋势预测等功能"
+version: "1.0.0"
+repo: "https://github.com/your_name/astrbot_plugin_data_analyst"
+tags: ["数据分析", "统计", "可视化", "工具"]
+license: "MIT"
+python_version: ">=3.8"
+astrbot_version: ">=3.4.0"
+main_file: "main.py"
+requirements: "requirements.txt"
